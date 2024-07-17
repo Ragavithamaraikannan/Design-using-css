@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+  <form>
+    <table border="1px" width="650px">
+        <tr>
+            <th colspan="2">Sign-up Form</th>
+        </tr>
+        <tr>
+            <td>FullName</td>
+            <td><input
+                 type="text"
+                 name="fullname" 
+                 value=""
+                 placeholder="eg.John Paul"></td>
+        </tr>
+        <tr>
+            <td>EmailAddress</td>
+            <td><input
+                 type="email"
+                 name="emailaddress" 
+                 value=""
+                 placeholder="eg.john345@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>MobileNumber</td>
+            <td><input
+                 type="text"
+                 name="MobileNumber" 
+                 value=""
+                 placeholder="eg.+(374)673 6573"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input
+                 type="password"
+                 name="password" 
+                 value=""
+                 placeholder="eg.Jon@999"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male"/> male<br/>
+                <input type="radio" name="gender" value="Female"/> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Skills</td>
+            <td>
+                <input type="checkbox" name="Skills[]" value="php" />php<br/>
+                <input type="checkbox" name="Skills[]" value="python" />python<br/>
+                <input type="checkbox" name="Skills[]" value="java" />java<br/>
+                <input type="checkbox" name="Skills[]" value="aws" />aws<br/>
+                <input type="checkbox" name="Skills[]" value=".net" />.net
+            </td>
+        </tr>
+
+        <tr>
+            <td>Country</td>
+            <td>
+                <select name ="country">
+                <option value="">choose any country</option>
+                <option value="india">india</option>
+                <option value="usa">usa</option>
+                <option value="uk">uk</option>
+                <option value="uae">uae</option>
+                <option value="other">other</option>
+                </select>
+            </td>
+        </tr>
+
+
+        <tr>
+         <td>File upload</td>
+         <td><input type="file" name="fileupload"/></td>
+        </tr>
+
+        <tr>
+            <td>Description</td>
+            <td><textarea name="Description"></textarea></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" name="submit" value="submit"/>
+                <input type="reset" name="reset" value="reset"/>
+            </td>
+        </tr>
+
+    </table>
+  </form>  
+</body>
+</html>
